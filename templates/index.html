@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Model Deployment--</title>
+</head>
+<body>
+    <h1><strong>Salary prediction using years of experience<strong></h1>
+    <p>
+        -- Enter the years of experience to get the estimated salary[0-9 years] --
+    </p>
+    <form action='/predict' method="POST">
+    <input type="number"  name="years" placeholder="years of experience"/>
+    <input type="submit"/>
+    </form>
+    <p>
+        Your predicted salary is : Rs. {{prediction_text}} LPA 
+    </p>
+
+</body>
+</html>
